@@ -4,6 +4,6 @@ WORKDIR /myapp
 
 COPY . .
 
-RUN cargo build --release
+RUN cargo build --release && cargo run
 
-CMD ["./target/release/mini-projet_mon_gestionnaire_de_compte_bancaire_simplifie"]
+CMD ["./target/release/app"]
