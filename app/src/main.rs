@@ -41,7 +41,14 @@ fn withdraw_money(balance : i32) {
     println!("Enter the amount you want to withdraw");
     let mut input: String = String::new();
     std::io::stdin().read_line(&mut input).expect("Failed to read line");
-    let balance = balance - input.trim().parse::<i32>().unwrap();
+    let mut input = bank_charges(input.trim().parse::<i32>().unwrap()) ;
+    let balance = balance - input;
     println!("Your balance is: {}", balance);
     start(balance)
+}
+
+fn bank_charges(input: i32) -> i32 {
+    let input = input + 10;
+    println!("bank charges amount to 10");
+    input
 }
