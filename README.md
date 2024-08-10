@@ -13,7 +13,7 @@ And learn how to use Rust.
    mkdir mini-project_my_bank_account_manager_simplifies
    ```
 4. Create a new Rust project.
-   <code-block lang="bash">Cargo new app</code-block>
+   ```bash Cargo new app```
 5. Link Git and GitHub.
    <code-block lang="bash">git init</code-block>
    <code-block lang="bash">git remote add origin</code-block>
