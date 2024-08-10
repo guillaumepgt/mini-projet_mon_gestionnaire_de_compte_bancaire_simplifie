@@ -23,20 +23,21 @@ And learn how to use Rust.
    git commit -m "Initial commit"
    git push -u origin main ```
 7. Create a new branch.
-   <code-block lang="bash">git checkout -b create_dockerfile</code-block>   
-   <code-block lang="bash">git push origin create_dockerfile</code-block>
+   ```bash
+   git checkout -b create_dockerfile
+   git push origin create_dockerfile```
 8. Create a dockerfile to run the project.
-   <code-block lang="docker">FROM rust:latest
+   ```docker
+   FROM rust:latest
    WORKDIR /myapp
    COPY . .
    RUN cargo build --release && cargo run
-   CMD ["./target/release/app"]</code-block>
+   CMD ["./target/release/app"]```
 9. Run dockerfile.
-   <code-block lang="bash">docker build -t myapp .</code-block>
-   <code-block lang="bash">docker run --rm -it myapp</code-block>
+   ```bash
+   docker build -t myapp .
+   docker run --rm -it myapp```
 10. Create a struct to represent a bank account.
 11. Implement methods to deposit and withdraw money.
 12. Implement a method to display the account balance.
-13. execute the program.
-    <code-block lang="bash">cargo build -t app . && cargo run --rm -it <app></app></code-block>
     
